@@ -1,0 +1,287 @@
+/* Adicionar aqui toda a estilização criada para sua aplicação. */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: #1f2a44;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* CONTAINER PADRÃO */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  background-color: #000;
+  border-bottom: 2px solid #32b9cd;
+}
+
+.header .container {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo {
+  color: #32b9cd;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.navbar {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e3b062;
+  font-size: 22px;
+}
+
+.navbar a {
+  color: #e3b062;
+}
+
+.navbar .agora a {
+  font-weight: 800;
+}
+
+/* BANNER - INDEX */
+.banner {
+  height: 500px;
+  background-image: url("../assets/imgs/bg-jelly-fish-para-home.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.banner p {
+  width: 280px;
+  color: white;
+  font-size: 54px;
+  line-height: 1.2;
+}
+
+.banner span {
+  font-weight: 800;
+}
+
+/* SOCIAL / CONTEÚDO */
+.social {
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.box {
+  width: 30%;
+  text-align: center;
+}
+
+.box img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.box h4 {
+  color: #e6005a;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.box p {
+  font-size: 22px;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* LOGIN E CADASTRO */
+.login {
+  min-height: 700px;
+  background-image: url("../assets/imgs/bg-jelly-fish-para_outras_pags.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+
+.login .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #e5e5e5;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.card-login {
+  width: 700px;
+  min-height: 320px;
+}
+
+.card-cadastro {
+  width: 760px;
+  min-height: 520px;
+}
+
+.card h2 {
+  color: #e681a8;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo span {
+  color: #e681a8;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.campo input {
+  height: 52px;
+  border: 2px solid #32b9cd;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 22px;
+  outline: none;
+  background-color: white;
+}
+
+.botao {
+  align-self: center;
+  margin-top: 16px;
+  background-color: #e6005a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 40px;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botao:hover {
+  opacity: 0.9;
+}
+
+/* SIMULADOR */
+.simulador {
+  min-height: 500px;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+
+.simulador h2 {
+  font-size: 42px;
+  color: #1f2a44;
+  margin-bottom: 20px;
+}
+
+.simulador p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #32b9cd;
+  color: white;
+  padding: 22px 0;
+  text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.version {
+  font-size: 18px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .header .container,
+  .boxes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .card-login,
+  .card-cadastro {
+    width: 100%;
+  }
+
+  .banner p {
+    font-size: 42px;
+  }
+}
